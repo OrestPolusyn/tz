@@ -165,6 +165,8 @@ main {
   position: -ms-sticky;
   position: sticky;
   left: 0;
+  color: #000;
+  font-size: 24px;
 }
 
 
