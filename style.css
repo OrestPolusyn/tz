@@ -117,14 +117,19 @@ main {
 
 }
 
-.content__box-static {
+.container {
   background-color: green;
   padding: 20px;
   flex: 0 0 auto;
   width: 100%;
   position: sticky;
-  left: 0;
   z-index: 10;
+  left: 0;
+}
+
+.content__box-static {
+  position: sticky;
+  left: 0;
 }
 
 .content__box-table {
