@@ -142,7 +142,7 @@ main {
 }
 
 .content__box {
-  position:relative;
+  position: relative;
   overflow: hidden;
   width: 100%;
 }
@@ -157,15 +157,13 @@ main {
   background-color: green;
   padding: 20px;
   z-index: 10;
-  display: block;
-  width: 100%;
+  border: 1px solid #000;
+  color: #fff;
   position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -o-sticky;
-  position: -ms-sticky;
   position: sticky;
+  padding: 5px;
+  background-color: #6392f6;
   left: 0;
-  -webkit-overflow-scrolling: touch
 }
 
 
@@ -194,8 +192,6 @@ main {
   position: relative;
   white-space: nowrap;
 }
-
-
 
 .content__box-data th {
   border: 1px solid #000;
