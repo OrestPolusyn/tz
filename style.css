@@ -142,9 +142,9 @@ main {
 }
 
 .content__box {
-  overflow: scroll;
+  position:relative;
+  overflow: hidden;
   width: 100%;
-
 }
 
 .content__box-table {
