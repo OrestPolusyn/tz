@@ -124,7 +124,6 @@ main {
   width: 100%;
   position: sticky;
   position: -webkit-sticky;
-  left: 0;
   display: block;
   z-index: 10;
 }
