@@ -158,6 +158,7 @@ main {
   position: sticky;
   left: 0;
   z-index: 10;
+ display:block;
 Position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
