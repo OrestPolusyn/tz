@@ -91,6 +91,7 @@ main {
   -ms-flex-positive: 1;
   flex-grow: 1;
   height: inherit;
+  height: -webkit-fill-available;
   background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
