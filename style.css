@@ -75,7 +75,7 @@ input {
   outline: transparent;
 }
 
-body {
+<<<<<<< HEAD=======>>>>>>>29efec148a443f6fb16d61ddad633672974e060c body {
   overflow: hidden;
   margin: 0;
   position: relative;
@@ -159,6 +159,11 @@ main {
   position: sticky;
   left: 0;
   z-index: 10;
+  display: block;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   float: right;
 }
 
