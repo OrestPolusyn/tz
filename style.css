@@ -153,10 +153,6 @@ main {
   margin-bottom: 10px;
   overflow-y: scroll;
   will-change: transform;
-  align-self: stretch;
-  align-self: auto;
-  display: flex;
-  align-self: flex-start;
 }
 
 .content__box-static {
@@ -167,14 +163,16 @@ main {
   flex: 0 0 auto;
   width: 100%;
   position: -webkit-sticky;
+  position: sticky;
   left: 0;
   z-index: 10;
-  display: block;
+  display: flex;
   position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
-  float: right;
+  align-self: stretch;
+  align-self: flex-start;
 }
 
 
