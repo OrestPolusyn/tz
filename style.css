@@ -169,7 +169,7 @@ main {
 
 .content__box-scroll {
   margin: 20px 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 
