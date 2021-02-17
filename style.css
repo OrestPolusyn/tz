@@ -70,6 +70,8 @@ input {
 
 html {
   height: -webkit-fill-available;
+  height: 100%;
+
 }
 
 body {
@@ -90,7 +92,7 @@ main {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  height: inherit;
+  height: 100%;
   height: -webkit-fill-available;
   background-color: #eee;
   display: -webkit-box;
