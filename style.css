@@ -141,34 +141,34 @@ main {
   flex: 0 0 auto;
 }
 
-.container{
-  overflow: unset;
+.content__box {
+  position:relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .content__box-table {
   position: relative;
   margin-bottom: 10px;
-  z-index: 10;
   overflow-y: scroll;
 }
 
 .content__box-static {
   background-color: green;
   padding: 20px;
-  min-height: 50px;
   z-index: 10;
-  border: 1px solid #000;
-  color: blue;
-  font-weight: bold;
-  font-style: 20px;
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 24px;
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
   position: sticky;
-  padding: 5px;
   left: 0;
-  top: 0;
-  z-index: 0;
-  margin-bottom: 20px;
 }
+
 
 .content__box-scroll {
   margin: 20px 0;
@@ -195,6 +195,7 @@ main {
   position: relative;
   white-space: nowrap;
 }
+
 
 .content__box-data th {
   border: 1px solid #000;
@@ -242,7 +243,6 @@ body,
   width: 100%;
   height: 100%;
 }
-
 
 .vbox {
   padding-top: 94px;
