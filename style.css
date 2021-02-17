@@ -153,13 +153,7 @@ main {
   margin-bottom: 10px;
   overflow-y: scroll;
   will-change: transform;
-
-}
-
-.container {
-  position: sticky;
-  left: 0;
-  right: 0;
+  align-self: stretch
 }
 
 .content__box-static {
