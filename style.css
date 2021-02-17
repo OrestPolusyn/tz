@@ -74,13 +74,6 @@ a,
 input {
   outline: transparent;
 }
-
-/* html {
-  height: -webkit-fill-available;
-  height: 100%;
-
-} */
-
 body {
   overflow: hidden;
   margin: 0;
@@ -165,8 +158,11 @@ main {
   position: sticky;
   left: 0;
   z-index: 10;
+Position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
 }
-
 .content__box-table {
   position: relative;
   margin-bottom: 10px;
