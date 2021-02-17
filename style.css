@@ -123,13 +123,16 @@ main {
   flex: 0 0 auto;
   width: 100%;
   position: sticky;
+  position: -webkit-sticky;
   z-index: 10;
   left: 0;
 }
 
 .content__box-static {
   position: sticky;
+  position: -webkit-sticky;
   left: 0;
+  display: block;
 }
 
 .content__box-table {
