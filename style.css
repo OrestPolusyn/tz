@@ -209,7 +209,7 @@ body,
 }
 
 .vbox {
-  /* padding-top: 84px; */
+  padding: 84px 0;
 
   /* previous syntax */
   display: -webkit-box;
