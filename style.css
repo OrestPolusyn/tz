@@ -84,7 +84,7 @@ input {
 body {
   overflow: hidden;
   margin: 0;
-
+  position: relative;
 }
 
 
@@ -96,19 +96,17 @@ main {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  height: 100%;
-  height: -webkit-fill-available;
   background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative;
+  position: absolute;
   left: 0;
   right: 0;
-  height: 100%;
-  max-height: 100vh;
+  top: 0;
+  bottom: 0;
   overflow-y: auto;
 }
 
