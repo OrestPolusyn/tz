@@ -144,15 +144,12 @@ main {
 .content__box {
   overflow-y: scroll;
   width: 100%;
-  overflow-x: hidden;
-
 }
 
 .content__box-table {
   position: relative;
   margin-bottom: 10px;
-  overflow-y: scroll;
-  will-change: transform;
+  overflow-x: auto; 
 }
 
 .content__box-static {
@@ -166,13 +163,6 @@ main {
   position: sticky;
   left: 0;
   z-index: 10;
-  display: flex;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  align-self: stretch;
-  align-self: flex-start;
 }
 
 
