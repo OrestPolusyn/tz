@@ -75,12 +75,6 @@ input {
   outline: transparent;
 }
 
-/* html {
-  height: -webkit-fill-available;
-  height: 100%;
-
-} */
-
 body {
   overflow: hidden;
   margin: 0;
@@ -165,6 +159,7 @@ main {
   position: sticky;
   left: 0;
   z-index: 10;
+  float: right;
 }
 
 .content__box-table {
