@@ -1,0 +1,286 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  outline: transparent;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a,
+input {
+  outline: transparent;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+main {
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  display: block;
+  max-width: 270px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: green;
+  margin-right: 6px;
+}
+
+.sidebar__widget {
+  height: 100%;
+  width: 50%;
+  border: 1px solid #eee;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  width: calc(100% - 276px);
+  height: 100%;
+}
+
+.content__header {
+  width: calc(100% - 276px);
+  height: 80px;
+  position: fixed;
+  background-color: greenyellow;
+  top: 0;
+  padding: 20px;
+  flex: 0 0 auto;
+}
+
+.content__box {
+  overflow-y: scroll;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.content__box-static {
+  background-color: green;
+  padding: 20px;
+  flex: 0 0 auto;
+  width: 100%;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.content__box-table {
+  position: relative;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+
+.content__box-scroll {
+  margin: 20px 0;
+}
+
+
+.content__box-data {
+  background-color: #6392f6;
+}
+
+.content__box-data th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #3e5d75;
+  color: #dedede;
+}
+
+.content__box-data td {
+  border: 1px solid #000;
+  min-height: 35px;
+  padding: 5px;
+  height: 35px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.content__box-data thead td {
+  min-width: 320px;
+}
+
+.content__box-data th {
+  border: 1px solid #000;
+  color: #fff;
+  position: sticky;
+  padding: 5px;
+  background-color: #6392f6;
+}
+
+input {
+  outline: transparent;
+}
+
+.content__box-data .cell__fixed--id {
+  z-index: 4;
+  left: 0;
+}
+
+
+.content__box-data td.cell__fixed {
+  position: sticky;
+  z-index: 2;
+  background-color: #3e5d75;
+  border: 1px solid #000;
+  left: 0;
+  padding: 3px;
+}
+
+@media (max-width:768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content,
+  .content__header {
+    width: 100%;
+  }
+}
+
+html,
+body,
+.viewport {
+  width: 100%;
+  height: 100%;
+}
+
+.vbox {
+  padding-top: 84px;
+
+  /* previous syntax */
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+
+  /* current syntax */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* items flex/expand horizontally */
+.hbox {
+  /* previous syntax */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  /* current syntax */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.space-between {
+  /* previous syntax */
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
+  box-pack: justify;
+
+  /* current syntax */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.main-box {
+  overflow: hidden;
+  /* previous syntax */
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex: 1 1 auto;
+  -ms-box-flex: 1 1 auto;
+  box-flex: 1 1 auto;
+  /* current syntax */
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
