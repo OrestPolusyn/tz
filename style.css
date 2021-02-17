@@ -149,7 +149,6 @@ main {
 .content__box-table {
   position: relative;
   margin-bottom: 10px;
-  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -169,7 +168,7 @@ main {
 
 .content__box-scroll {
   margin: 20px 0;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 
