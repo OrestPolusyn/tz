@@ -153,7 +153,10 @@ main {
   margin-bottom: 10px;
   overflow-y: scroll;
   will-change: transform;
-  align-self: stretch
+  align-self: stretch;
+  align-self: auto;
+  display: flex;
+  align-self: flex-start;
 }
 
 .content__box-static {
