@@ -153,7 +153,7 @@ main {
   overflow-y: scroll;
 }
 
-.content__box-static {
+.content__box-static p{
   background-color: green;
   padding: 20px;
   z-index: 10;
