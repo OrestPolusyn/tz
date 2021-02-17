@@ -158,8 +158,9 @@ main {
   min-height: 50px;
   z-index: 10;
   border: 1px solid #000;
-  color: #000;
-  font-style: 24px;
+  color: blue;
+  font-weight: bold;
+  font-style: 20px;
   position: -webkit-sticky;
   position: sticky;
   padding: 5px;
