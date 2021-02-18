@@ -117,12 +117,13 @@ main {
 
 }
 
-.content__box-static p{
+
+.content__box-static p {
   background-color: green;
   padding: 20px;
   flex: 0 0 auto;
   width: 100%;
-  position: sticky;
+  position: fixed;
   position: -webkit-sticky;
   display: block;
   z-index: 10;
