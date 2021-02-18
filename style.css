@@ -208,18 +208,7 @@ input {
   padding: 3px;
 }
 
-@media (max-width:768px) {
-  .sidebar {
-    display: none;
-  }
 
-  .content,
-  .content__header,
-  .test {
-    max-width: 100%;
-    width: 100%;
-  }
-}
 
 html,
 body,
@@ -389,3 +378,16 @@ td:first-child {
     box-shadow: inset -2px 0px rgba(black, 0.25);
   }
 } */
+
+@media (max-width:768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content,
+  .content__header,
+  .test {
+    max-width: 100%;
+    width: 100%;
+  }
+}
