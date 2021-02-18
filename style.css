@@ -101,7 +101,6 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
 }
 
 .sidebar {
@@ -123,11 +122,11 @@ main {
   padding: 20px;
 }
 
-.content {
+/* .content {
   position: relative;
   width: calc(100% - 276px);
   height: 100%;
-}
+} */
 
 .content__header {
   width: calc(100% - 276px);
@@ -141,7 +140,7 @@ main {
   flex: 0 0 auto;
 }
 
- .content__box-static {
+.content__box-static {
   position: fixed;
 }
 
@@ -152,7 +151,7 @@ main {
   overflow-y: scroll;
 }
 
- .container {
+.container {
   background-color: green;
   padding: 20px;
   min-height: 50px;
@@ -309,3 +308,96 @@ body,
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+
+
+.test {
+  height: 306px;
+  max-width: calc(100vw - 276px);
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  color: lightgrey;
+  table-layout: fixed;
+}
+
+/* thead {
+  // thead and tr don't currently support sticky
+  // position: -webkit-sticky;
+  // position: sticky;
+  // left: 0; top: 0;
+} */
+
+.content {
+  height: 50px;
+  background-color: brown;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+}
+
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+}
+
+th:first-child {
+  z-index: 3;
+}
+
+
+th,
+td {
+  padding: 10px 100px;
+  text-transform: capitalize;
+}
+
+th {
+  background: black;
+  color: white;
+  white-space: nowrap;
+}
+
+tr {
+  background: hsl(0, 0%, 20%);
+}
+
+tr:nth-child(even) {
+  background: hsl(0, 0%, 15%);
+}
+
+tr:not(:last-of-type) {
+  border-bottom: 2px solid rgba(yellow, 0.25);
+}
+
+
+
+
+th:first-child,
+td:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+  z-index: 2;
+  width: 200px;
+}
+
+
+/* td:first-child {
+  tr:nth-child(odd) & {
+    background: hsl(0, 0%, 20%);
+    box-shadow: inset -2px 0px rgba(black, 0.25);
+  }
+
+  tr:nth-child(even) & {
+    background: hsl(0, 0%, 15%);
+    box-shadow: inset -2px 0px rgba(black, 0.25);
+  }
+} */
