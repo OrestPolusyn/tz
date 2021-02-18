@@ -354,8 +354,12 @@ tr:not(:last-of-type) {
   border-bottom: 2px solid rgba(yellow, 0.25);
 }
 
-
-
+.content-test {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+  background-color: brown;
+}
 
 th:first-child,
 td:first-child {
