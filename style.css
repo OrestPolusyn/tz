@@ -150,7 +150,7 @@ main {
 .content__box-table {
   position: relative;
   margin-bottom: 10px;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .content__box-static {
@@ -158,15 +158,16 @@ main {
   padding: 20px;
   flex: 1 1 auto;
   width: 100%;
-  position: absolute;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -ms-page;
+  display: block;
   left: 0;
   z-index: 10;
 }
 
-
 .content__box-scroll {
   margin: 20px 0;
-  overflow: scroll;
 }
 
 
