@@ -231,6 +231,10 @@ input {
   .content__header {
     width: 100%;
   }
+
+  .test{
+    max-width: 100%;
+  }
 }
 
 html,
